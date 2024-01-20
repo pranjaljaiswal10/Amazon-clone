@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    font-family: "arial";
+    box-sizing: border-box;
+}
+nav{
+    height: 60px;
+    background-color: #0f1111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+
+.logo img{
+    width: 100px;
+    height: auto;
+    border: 1px solid transparent;
+}
+.logo img:hover{
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    width: 100px;
+    padding: 0.5rem;
+}
+.box2:hover{
+    border: 1px solid gray;
+}
+
+.amazon-search{
+    border: 1px solid gray;
+    border-right: none;
+    border-top-left-radius: 5px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+}
+.amazon-search input{
+  width: 500px;
+  height: 38px;
+}
+.amazon-search .search{
+    background-color: chocolate;
+    padding: 10px;
+}
+.amazon-search select,.en select{
+    border: none;
+    background-color: transparent; 
+}
+
+.en,.signin,.cart,.return{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.list{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    
+    margin: 0.5rem 1.5rem;
+}
+
+.list ul{
+    display: flex;
+    list-style-type: none;
+    flex-grow: 1;
+}
+.list ul li{
+    padding-left: 1rem;
+}
+.image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.image p{
+    position: absolute;
+    bottom: 20%;
+   background-color: black;  
+   text-align: center;
+   width: 95%;
+   height:7%;
+   padding-top: 0.5rem;
+}
+.image img{
+    width: 100%;
+    height: 500px;
+    
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin:1rem;
+}
+
+.card{
+    width:350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(65, 65,65, 1);
+    margin: 0.5rem 0;
+    padding: 1rem;
+}
+.card img {
+    width: 100%;
+    height: 250px;
+    padding:  1rem 0;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+footer p{
+    background-color: #37475a;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+footer .container,footer .logo{
+    background-color: #232f3e;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+footer li{
+  list-style-type: none;
+}
